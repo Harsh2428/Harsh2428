@@ -1,16 +1,25 @@
-## Hi there 👋
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./light.svg">
+    <img alt="Harshvardhan Srivastava" src="./dark.svg" width="100%">
+  </picture>
+</p>
 
-<!--
-**Harsh2428/Harsh2428** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi, I'm Harshvardhan Srivastava 👋
 
-Here are some ideas to get you started:
+🎓 B.Tech CSE – KIET Group of Institutions  
+🎓 BS in Data Science & AI – IIT Madras  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 About Me
+- 🤖 Machine Learning Enthusiast
+- 📱 Android Developer
+- 💻 AI & Data Science
+- 🌱 Currently learning Deep Learning
+
+## 🛠️ Skills
+Python • Java • C++ • TensorFlow • Flutter • Git • Docker • MySQL • Firebase
+
+## 📫 Connect
+- GitHub: https://github.com/Harsh2428
+- LinkedIn: https://linkedin.com/in/harshvardhan-srivastava-1038a4323
