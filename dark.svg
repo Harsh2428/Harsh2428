@@ -1,31 +1,630 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610">
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 1180 610"
+width="1180"
+height="610">
+
 <defs>
-<linearGradient id="g" x1="0%" x2="100%">
-<stop offset="0%" stop-color="#7C3AED"><animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="8s" repeatCount="indefinite"/></stop>
-<stop offset="100%" stop-color="#22D3EE"/>
+
+<!-- Background -->
+
+<linearGradient id="bg"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="100%">
+
+<stop offset="0%" stop-color="#030712">
+<animate attributeName="stop-color"
+values="#030712;#081225;#030712"
+dur="12s"
+repeatCount="indefinite"/>
+</stop>
+
+<stop offset="100%"
+stop-color="#0F172A"/>
+
 </linearGradient>
-<filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+
+<!-- Accent -->
+
+<linearGradient id="accent">
+
+<stop offset="0%"
+stop-color="#7C3AED"/>
+
+<stop offset="50%"
+stop-color="#22D3EE"/>
+
+<stop offset="100%"
+stop-color="#10B981"/>
+
+<animateTransform
+attributeName="gradientTransform"
+type="rotate"
+from="0 .5 .5"
+to="360 .5 .5"
+dur="18s"
+repeatCount="indefinite"/>
+
+</linearGradient>
+
+<!-- Glow -->
+
+<filter id="glow">
+
+<feGaussianBlur stdDeviation="8"/>
+
+</filter>
+
 </defs>
-<rect width="1180" height="610" rx="28" fill="#030712"/>
-<rect x="20" y="20" width="1140" height="570" rx="24" fill="#0F172A" stroke="rgba(255,255,255,.08)"/>
-<g filter="url(#glow)">
-<text x="60" y="120" fill="url(#g)" font-family="monospace" font-size="18">
-<tspan x="60" dy="0">      .----.</tspan>
-<tspan x="60" dy="22">     / .--. \</tspan>
-<tspan x="60" dy="22">    | | () | |</tspan>
-<tspan x="60" dy="22">     \ '--' /</tspan>
-<tspan x="60" dy="22">      '----'</tspan>
-<animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="4s" repeatCount="indefinite"/>
+
+<!-- Background -->
+
+<rect
+width="1180"
+height="610"
+fill="url(#bg)"/>
+
+<!-- Left glow -->
+
+<circle
+cx="200"
+cy="180"
+r="170"
+fill="#7C3AED"
+opacity=".12"
+filter="url(#glow)">
+
+<animate
+attributeName="cx"
+values="180;240;180"
+dur="10s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- Right glow -->
+
+<circle
+cx="980"
+cy="420"
+r="180"
+fill="#22D3EE"
+opacity=".10"
+filter="url(#glow)">
+
+<animate
+attributeName="cy"
+values="420;390;420"
+dur="12s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- ========================= -->
+<!-- Main Glass Card -->
+<!-- ========================= -->
+
+<rect
+x="20"
+y="20"
+width="1140"
+height="570"
+rx="28"
+fill="#0F172A"
+fill-opacity=".92"
+stroke="url(#accent)"
+stroke-width="1.4">
+
+<animate
+attributeName="stroke-opacity"
+values=".25;1;.25"
+dur="4s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- ========================= -->
+<!-- Left Panel -->
+<!-- ========================= -->
+
+<rect
+x="45"
+y="45"
+width="360"
+height="520"
+rx="22"
+fill="#111827"
+fill-opacity=".88"
+stroke="#FFFFFF"
+stroke-opacity=".05"/>
+<animateTransform
+attributeName="transform"
+type="translate"
+values="0 0;0 -3;0 0"
+dur="5s"
+repeatCount="indefinite"/>
+<!-- ========================= -->
+<!-- Right Panel -->
+<!-- ========================= -->
+
+<rect
+x="430"
+y="45"
+width="705"
+height="520"
+rx="22"
+fill="#111827"
+fill-opacity=".88"
+stroke="#FFFFFF"
+stroke-opacity=".05"/>
+<animateTransform
+attributeName="transform"
+type="translate"
+values="0 0;0 -3;0 0"
+dur="5s"
+repeatCount="indefinite"/>
+<!-- ========================= -->
+<!-- Glass Reflection -->
+<!-- ========================= -->
+
+<path
+
+d="
+M40 40
+L350 40
+L250 580
+L40 580
+Z"
+
+fill="white"
+opacity=".03">
+
+<animate
+
+attributeName="opacity"
+
+values=".01;.05;.01"
+
+dur="6s"
+
+repeatCount="indefinite"/>
+
+</path>
+<!-- ========================= -->
+<!-- TERMINAL -->
+<!-- ========================= -->
+
+<g id="terminal">
+
+<!-- Header -->
+<!-- Greeting -->
+
+<text
+
+x="480"
+
+y="155"
+
+fill="#22D3EE"
+
+font-size="28"
+
+font-family="monospace">
+
+Hi
+
 </text>
+
+<!-- Name -->
+<!-- ========================= -->
+<!-- Animated Roles -->
+<!-- ========================= -->
+<text x="480" y="315" fill="#94A3B8" font-size="18" font-family="monospace">
+📍 Uttar Pradesh, India
+</text>
+
+<text x="480" y="345" fill="#94A3B8" font-size="18" font-family="monospace">
+🎓 KIET Group of Institutions
+</text>
+
+<text x="480" y="375" fill="#94A3B8" font-size="18" font-family="monospace">
+🎓 IIT Madras BS (DS &amp; AI)
+</text>
+
+<text x="480" y="405" fill="#94A3B8" font-size="18" font-family="monospace">
+🌱 Machine Learning • Android • Open Source
+</text>
+<g
+font-family="monospace"
+font-size="23"
+fill="url(#accent)">
+
+<text x="480" y="255">
+
+Machine Learning Engineer
+
+<animate
+
+attributeName="opacity"
+
+values="1;1;0;0"
+
+dur="16s"
+
+keyTimes="0;0.22;0.25;1"
+
+repeatCount="indefinite"/>
+
+</text>
+
+<text x="480" y="255" opacity="0">
+
+AI Developer
+
+<animate
+
+attributeName="opacity"
+
+values="0;0;1;1;0"
+
+dur="16s"
+
+keyTimes="0;0.25;0.28;0.47;0.50"
+
+repeatCount="indefinite"/>
+
+</text>
+
+<text x="480" y="255" opacity="0">
+
+Android Developer
+
+<animate
+
+attributeName="opacity"
+
+values="0;0;1;1;0"
+
+dur="16s"
+
+keyTimes="0;0.50;0.53;0.72;0.75"
+
+repeatCount="indefinite"/>
+
+</text>
+
+<text x="480" y="255" opacity="0">
+
+Open Source Contributor
+
+<animate
+
+attributeName="opacity"
+
+values="0;0;1;1;0"
+
+dur="16s"
+
+keyTimes="0;0.75;0.78;0.97;1"
+
+repeatCount="indefinite"/>
+
+</text>
+
+<!-- Cursor -->
+
+<text
+x="860"
+y="255"
+fill="#22D3EE">
+
+|
+
+<animate
+
+attributeName="opacity"
+
+values="1;0;1"
+
+dur=".8s"
+
+repeatCount="indefinite"/>
+
+</text>
+
 </g>
-<g font-family="monospace">
-<text x="480" y="90" fill="#F8FAFC" font-size="28">Hi</text>
-<text x="480" y="130" fill="#F8FAFC" font-size="34">I'm Harshvardhan Srivastava</text>
-<text x="480" y="180" fill="url(#g)" font-size="22">Machine Learning • AI Development • Android Development</text>
-<text x="480" y="235" fill="#94A3B8" font-size="18">Location: Uttar Pradesh, India</text>
-<text x="480" y="265" fill="#94A3B8" font-size="18">Education: KIET CSE | IIT Madras BS (DS &amp; AI)</text>
-<text x="480" y="295" fill="#94A3B8" font-size="18">GitHub: github.com/Harsh2428</text>
-<text x="480" y="325" fill="#94A3B8" font-size="18">Email: harshvardhan.2428cse@kiet.edu</text>
+<text
+
+x="480"
+
+y="205"
+
+fill="#F8FAFC"
+
+font-size="34"
+
+font-family="monospace"
+font-weight="bold">
+
+I'm Harshvardhan Srivastava
+
+</text>
+<rect
+
+x="450"
+
+y="65"
+
+width="665"
+
+height="42"
+
+rx="12"
+
+fill="#1E293B"/>
+
+<!-- macOS Buttons -->
+
+<circle cx="475" cy="86" r="6" fill="#FF5F56"/>
+<circle cx="495" cy="86" r="6" fill="#FFBD2E"/>
+<circle cx="515" cy="86" r="6" fill="#27C93F"/>
+
+<!-- Terminal Title -->
+
+<text
+
+x="560"
+
+y="92"
+
+fill="#94A3B8"
+
+font-family="monospace"
+
+font-size="15">
+
+harsh@developer:~
+
+</text>
+<!-- ========================= -->
+<!-- Skills Title -->
+<!-- ========================= -->
+
+<text
+x="480"
+y="455"
+fill="#F8FAFC"
+font-size="20"
+font-family="Inter,Segoe UI,Arial,sans-serif"
+font-weight="600">
+
+Tech Stack
+
+</text>
+
+<!-- ========================= -->
+<!-- Skill Pills -->
+<!-- ========================= -->
+
+<g id="skills">
+
+<!-- Python -->
+<g transform="translate(480 475)">
+    <rect width="82" height="34" rx="17" fill="#172033" stroke="url(#accent)">
+        <animate attributeName="stroke-opacity"
+                 values=".4;1;.4"
+                 dur="3s"
+                 repeatCount="indefinite"/>
+    </rect>
+    <text x="41" y="22"
+          text-anchor="middle"
+          fill="#22D3EE"
+          font-size="14"
+          font-family="Inter">Python</text>
 </g>
-<rect x="480" y="370" rx="14" width="86" height="28" fill="#111827" stroke="url(#g)"/><text x="492" y="389" font-family="sans-serif" font-size="14" fill="#F8FAFC">Python</text><rect x="580" y="370" rx="14" width="66" height="28" fill="#111827" stroke="url(#g)"/><text x="592" y="389" font-family="sans-serif" font-size="14" fill="#F8FAFC">Java</text><rect x="660" y="370" rx="14" width="56" height="28" fill="#111827" stroke="url(#g)"/><text x="672" y="389" font-family="sans-serif" font-size="14" fill="#F8FAFC">C++</text><rect x="730" y="370" rx="14" width="126" height="28" fill="#111827" stroke="url(#g)"/><text x="742" y="389" font-family="sans-serif" font-size="14" fill="#F8FAFC">TensorFlow</text><rect x="870" y="370" rx="14" width="146" height="28" fill="#111827" stroke="url(#g)"/><text x="882" y="389" font-family="sans-serif" font-size="14" fill="#F8FAFC">Scikit-Learn</text><rect x="1030" y="370" rx="14" width="96" height="28" fill="#111827" stroke="url(#g)"/><text x="1042" y="389" font-family="sans-serif" font-size="14" fill="#F8FAFC">Flutter</text><rect x="480" y="412" rx="14" width="56" height="28" fill="#111827" stroke="url(#g)"/><text x="492" y="431" font-family="sans-serif" font-size="14" fill="#F8FAFC">Git</text><rect x="550" y="412" rx="14" width="86" height="28" fill="#111827" stroke="url(#g)"/><text x="562" y="431" font-family="sans-serif" font-size="14" fill="#F8FAFC">Docker</text><rect x="650" y="412" rx="14" width="76" height="28" fill="#111827" stroke="url(#g)"/><text x="662" y="431" font-family="sans-serif" font-size="14" fill="#F8FAFC">MySQL</text><rect x="740" y="412" rx="14" width="106" height="28" fill="#111827" stroke="url(#g)"/><text x="752" y="431" font-family="sans-serif" font-size="14" fill="#F8FAFC">Firebase</text></svg>
+
+<!-- Java -->
+<g transform="translate(575 475)">
+    <rect width="70" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
+    <text x="35" y="22"
+          text-anchor="middle"
+          fill="#22D3EE"
+          font-size="14"
+          font-family="Inter">Java</text>
+</g>
+
+<!-- C++ -->
+<g transform="translate(658 475)">
+    <rect width="62" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
+    <text x="31" y="22"
+          text-anchor="middle"
+          fill="#22D3EE"
+          font-size="14"
+          font-family="Inter">C++</text>
+</g>
+
+<!-- TensorFlow -->
+<g transform="translate(735 475)">
+    <rect width="118" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
+    <text x="59" y="22"
+          text-anchor="middle"
+          fill="#22D3EE"
+          font-size="14"
+          font-family="Inter">TensorFlow</text>
+</g>
+
+<!-- Flutter -->
+<g transform="translate(870 475)">
+    <rect width="85" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
+    <text x="42" y="22"
+          text-anchor="middle"
+          fill="#22D3EE"
+          font-size="14"
+          font-family="Inter">Flutter</text>
+</g>
+
+<!-- Docker -->
+<g transform="translate(480 520)">
+    <rect width="85" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
+    <text x="42" y="22"
+          text-anchor="middle"
+          fill="#10B981"
+          font-size="14"
+          font-family="Inter">Docker</text>
+</g>
+
+<!-- Git -->
+<g transform="translate(580 520)">
+    <rect width="60" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
+    <text x="30" y="22"
+          text-anchor="middle"
+          fill="#10B981"
+          font-size="14"
+          font-family="Inter">Git</text>
+</g>
+
+<!-- GitHub -->
+<g transform="translate(655 520)">
+    <rect width="90" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
+    <text x="45" y="22"
+          text-anchor="middle"
+          fill="#10B981"
+          font-size="14"
+          font-family="Inter">GitHub</text>
+</g>
+
+<!-- Firebase -->
+<g transform="translate(760 520)">
+    <rect width="95" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
+    <text x="47" y="22"
+          text-anchor="middle"
+          fill="#10B981"
+          font-size="14"
+          font-family="Inter">Firebase</text>
+</g>
+
+<!-- MySQL -->
+<g transform="translate(870 520)">
+    <rect width="80" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
+    <text x="40" y="22"
+          text-anchor="middle"
+          fill="#10B981"
+          font-size="14"
+          font-family="Inter">MySQL</text>
+</g>
+
+</g>
+</g>
+<!-- ========================= -->
+<!-- Floating Particles -->
+<!-- ========================= -->
+<!-- ========================= -->
+<!-- Scanline -->
+<!-- ========================= -->
+<!-- ========================= -->
+<!-- Ambient Glow -->
+<!-- ========================= -->
+
+<circle
+cx="1040"
+cy="100"
+r="120"
+fill="#22D3EE"
+opacity=".06"
+filter="url(#glow)">
+
+<animate
+attributeName="r"
+values="120;145;120"
+dur="8s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle
+cx="180"
+cy="500"
+r="130"
+fill="#7C3AED"
+opacity=".05"
+filter="url(#glow)">
+
+<animate
+attributeName="r"
+values="130;160;130"
+dur="9s"
+repeatCount="indefinite"/>
+
+</circle>
+<rect
+x="20"
+y="-25"
+width="1140"
+height="18"
+fill="#22D3EE"
+opacity=".05">
+
+<animate
+attributeName="y"
+values="-25;610;-25"
+dur="6s"
+repeatCount="indefinite"/>
+
+</rect>
+<g id="particles">
+
+<circle cx="120" cy="120" r="2" fill="#22D3EE" opacity=".8">
+<animate attributeName="cy"
+values="120;90;120"
+dur="8s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="210" cy="480" r="2" fill="#7C3AED" opacity=".7">
+<animate attributeName="cy"
+values="480;450;480"
+dur="10s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="340" cy="180" r="3" fill="#10B981">
+<animate attributeName="cy"
+values="180;150;180"
+dur="7s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="620" cy="150" r="2" fill="#22D3EE">
+<animate attributeName="cy"
+values="150;120;150"
+dur="9s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="760" cy="500" r="2" fill="#7C3AED">
+<animate attributeName="cy"
+values="500;470;500"
+dur="8s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="980" cy="220" r="3" fill="#10B981">
+<animate attributeName="cy"
+values="220;190;220"
+dur="11s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="1080" cy="430" r="2" fill="#22D3EE">
+<animate attributeName="cy"
+values="430;400;430"
+dur="9s"
+repeatCount="indefinite"/>
+</circle>
+
+</g>
+</svg>
