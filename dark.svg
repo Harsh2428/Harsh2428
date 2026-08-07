@@ -130,23 +130,51 @@ repeatCount="indefinite"/>
 <!-- ========================= -->
 <!-- Left Panel -->
 <!-- ========================= -->
+<!-- ================= LEFT PANEL ================= -->
 
-<rect
-x="45"
-y="45"
-width="360"
-height="520"
-rx="22"
-fill="#111827"
-fill-opacity=".88"
-stroke="#FFFFFF"
-stroke-opacity=".05"/>
-<animateTransform
-attributeName="transform"
-type="translate"
-values="0 0;0 -3;0 0"
-dur="5s"
-repeatCount="indefinite"/>
+<g id="leftPanel">
+
+    <!-- Original Panel -->
+    <rect
+        x="45"
+        y="45"
+        width="360"
+        height="520"
+        rx="22"
+        fill="#111827"
+        fill-opacity=".88"
+        stroke="#FFFFFF"
+        stroke-opacity=".05"/>
+
+    <!-- Image -->
+    <image
+        href="profile.jpg"
+        x="70"
+        y="70"
+        width="310"
+        height="470"
+        preserveAspectRatio="xMidYMid slice"/>
+
+    <!-- Image Border -->
+    <rect
+        x="70"
+        y="70"
+        width="310"
+        height="470"
+        rx="18"
+        fill="none"
+        stroke="url(#accent)"
+        stroke-width="2"/>
+
+    <!-- Floating -->
+    <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;0 -3;0 0"
+        dur="5s"
+        repeatCount="indefinite"/>
+
+</g>
 <!-- ========================= -->
 <!-- Right Panel -->
 <!-- ========================= -->
