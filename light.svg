@@ -20,11 +20,11 @@
 </text>
 </g>
 <g font-family="monospace">
-<text x="480" y="90" fill="#0F172A" font-size="28">Hi 👋</text>
+<text x="480" y="90" fill="#0F172A" font-size="28">Hi</text>
 <text x="480" y="130" fill="#0F172A" font-size="34">I'm Harshvardhan Srivastava</text>
 <text x="480" y="180" fill="url(#g)" font-size="22">Machine Learning • AI Development • Android Development</text>
 <text x="480" y="235" fill="#475569" font-size="18">Location: Uttar Pradesh, India</text>
-<text x="480" y="265" fill="#475569" font-size="18">Education: KIET CSE | IIT Madras BS (DS & AI)</text>
+<text x="480" y="265" fill="#475569" font-size="18">Education: KIET CSE | IIT Madras BS (DS &amp; AI)</text>
 <text x="480" y="295" fill="#475569" font-size="18">GitHub: github.com/Harsh2428</text>
 <text x="480" y="325" fill="#475569" font-size="18">Email: harshvardhan.2428cse@kiet.edu</text>
 </g>
