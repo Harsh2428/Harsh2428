@@ -5,7 +5,7 @@
 <h1 align="center">Hi 👋, I'm Harshvardhan Srivastava</h1>
 
 <h3 align="center">
-AI • Machine Learning • Data Science • Android Development • Open Source
+AI • Machine Learning • Data Science • Development Using AI 
 </h3>
 
 <p align="center">
@@ -33,7 +33,7 @@ AI • Machine Learning • Data Science • Android Development • Open Source
 
 🌱 Currently learning Deep Learning & MLOps
 
-🚀 Interested in Open Source Contributions
+🚀 Interested in AI Devlopment
 
 ---
 
@@ -41,7 +41,7 @@ AI • Machine Learning • Data Science • Android Development • Open Source
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=python,java,cpp,tensorflow,pytorch,flutter,firebase,docker,git,github,mysql,vscode,linux"/>
+<img src="https://skillicons.dev/icons?i=python,java,tensorflow,pytorch,flutter,git,github,mysql,vscode"/>
 
 </p>
 
