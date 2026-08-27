@@ -236,7 +236,7 @@ Hi
 </text>
 
 <text x="480" y="405" fill="#94A3B8" font-size="18" font-family="monospace">
-🌱 Machine Learning • Android • Open Source
+🌱 Machine Learning • Problem Solving
 </text>
 <g
 font-family="monospace"
@@ -299,7 +299,7 @@ repeatCount="indefinite"/>
 
 <text x="480" y="255" opacity="0">
 
-Open Source Contributor
+Devlopment using AI
 
 <animate
 
@@ -444,7 +444,7 @@ Tech Stack
           text-anchor="middle"
           fill="#22D3EE"
           font-size="14"
-          font-family="Inter">C++</text>
+          font-family="Inter">C</text>
 </g>
 
 <!-- TensorFlow -->
@@ -458,14 +458,14 @@ Tech Stack
 </g>
 
 <!-- Flutter -->
-<g transform="translate(870 475)">
+<!-- <g transform="translate(870 475)">
     <rect width="85" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
     <text x="42" y="22"
           text-anchor="middle"
           fill="#22D3EE"
           font-size="14"
           font-family="Inter">Flutter</text>
-</g>
+</g> -->
 
 <!-- Docker -->
 <g transform="translate(480 520)">
@@ -474,7 +474,7 @@ Tech Stack
           text-anchor="middle"
           fill="#10B981"
           font-size="14"
-          font-family="Inter">Docker</text>
+          font-family="Inter">MySql</text>
 </g>
 
 <!-- Git -->
@@ -504,18 +504,18 @@ Tech Stack
           text-anchor="middle"
           fill="#10B981"
           font-size="14"
-          font-family="Inter">Firebase</text>
+          font-family="Inter">Ai Studio</text>
 </g>
 
 <!-- MySQL -->
-<g transform="translate(870 520)">
+<!-- <g transform="translate(870 520)">
     <rect width="80" height="34" rx="17" fill="#172033" stroke="url(#accent)"/>
     <text x="40" y="22"
           text-anchor="middle"
           fill="#10B981"
           font-size="14"
           font-family="Inter">MySQL</text>
-</g>
+</g> -->
 
 </g>
 </g>
