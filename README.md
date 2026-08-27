@@ -27,8 +27,6 @@ AI • Machine Learning • Data Science • Development Using AI
 
 🤖 Passionate about Artificial Intelligence & Machine Learning
 
-📱 Android Developer
-
 💻 Competitive Programmer
 
 🌱 Currently learning Deep Learning & MLOps
@@ -62,11 +60,11 @@ AI • Machine Learning • Data Science • Development Using AI
 # 🔥 GitHub Streak
 
 <p align="center">
-
-<img src="https://streak-stats.demolab.com?user=Harsh2428&theme=tokyonight&hide_border=true"/>
-
+  <img
+    src="https://streak-stats.demolab.com?user=Harsh2428&theme=tokyonight&hide_border=true"
+    alt="GitHub Streak"
+  />
 </p>
-
 ---
 
 # 🐍 Contribution Snake
