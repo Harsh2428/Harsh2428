@@ -85,15 +85,15 @@ AI • Machine Learning • Data Science • Development Using AI
 </p>
 
 ---
-
 # 📈 Activity Graph
 
 <p align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Harsh2428&theme=tokyo-night"/>
-
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Harsh2428&theme=react-dark&hide_border=true"
+    alt="Harshvardhan's GitHub Activity Graph"
+    width="100%"
+  />
 </p>
-
 ---
 
 # 🌐 Connect With Me
